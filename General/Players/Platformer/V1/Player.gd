@@ -1,21 +1,21 @@
-class_name BasicPlatformerPlayer
+class_name PlatformerPlayerV1
 extends CharacterBody2D
 
 @onready var temp_body: MeshInstance2D = $TempBody
 @onready var collision_shape_2d: CollisionShape2D = $CollisionShape2D
 
 @export_category("Player Statistics")
-@export_subgroup("Speed Variables")
+@export_group("Speed Variables")
 @export_range(1.0, 100.0, 1.0, "or_greater") var walk_speed: float = 150.0
 @export_range(1.0, 100.0, 1.0, "or_greater") var running_speed: float = 200.0
 @export_range(1.0, 100.0, 1.0, "or_greater") var dash_speed: float = 400.0
 @export_range(1.0, 100.0, 1.0, "or_greater") var crouching_speed: float = 50.0
 
-@export_subgroup("Dash Default Variables")
+@export_group("Dash Default Variables")
 @export_range(0.0, 5.0) var default_dash_time: float = 0.2
 @export_range(0.0, 5.0) var default_dash_interval: float = 1.0
 
-@export_subgroup("Jump Default Variables")
+@export_group("Jump Default Variables")
 @export_range(1.0, 100.0, 1.0, "or_greater") var jump_strength: float = 400.0
 @export_range(1, 2, 1, "or_greater") var default_jumps: int = 2
 @export_range(1, 2, 1, "or_greater") var default_wall_jumps: int = 1
@@ -101,7 +101,5 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction * running_speed
 	else:
 		velocity.x = direction * walk_speed
-	
-	
 	
 	move_and_slide()
