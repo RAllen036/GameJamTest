@@ -1,0 +1,4 @@
+SlotData
+InventoryData
+InputEventKey
+ItemData

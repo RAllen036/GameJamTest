@@ -1,2 +1,8 @@
 res://General/Players/Platformer/V1/Player.tscn
 res://General/Worlds/Platformer/PlatformerWorldOne.tscn
+res://Resources/Items/ItemData.gd
+res://Resources/Items/Apple.tres
+res://Resources/SlotData/SlotData.gd
+res://Resources/Inventory/InventoryData/InventoryData.gd
+res://Resources/Inventory/InventoryData/player1.tres
+res://Resources/Inventory/Items/apple.tres
