@@ -53,7 +53,9 @@ func _physics_process(delta: float) -> void:
 	if dashing and not crouching:
 		velocity.x = direction_buffer * dash_speed
 		dash_time -= delta
+		temp_body.self_modulate = Color.RED
 		if dash_time <= 0.0:
+			temp_body.self_modulate = Color.WHITE
 			dash_time = default_dash_time
 			dash_interval = default_dash_interval
 			dashing = false

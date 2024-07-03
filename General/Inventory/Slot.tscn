@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8nqg0lqmmswh"]
+
+[ext_resource type="Texture2D" uid="uid://dedtevoyu2bix" path="res://Assets/Items/basic.png" id="1_cv2fc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jtpvy"]
+atlas = ExtResource("1_cv2fc")
+region = Rect2(0, 0, 32, 32)
+
+[node name="Slot" type="PanelContainer"]
+custom_minimum_size = Vector2(64, 64)
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="ItemTexture" type="TextureRect" parent="Margin"]
+layout_mode = 2
+texture = SubResource("AtlasTexture_jtpvy")
+stretch_mode = 5
+
+[node name="QuantityLabel" type="Label" parent="Margin"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+text = "x99"
