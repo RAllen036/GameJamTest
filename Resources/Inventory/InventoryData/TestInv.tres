@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="InventoryData" load_steps=8 format=3 uid="uid://chkgyj1kcj0lh"]
+
+[ext_resource type="Script" path="res://Resources/Inventory/InventoryData/InventoryData.gd" id="1_ir34k"]
+[ext_resource type="Resource" uid="uid://b26rd2yahbfy1" path="res://Resources/Inventory/Items/Apple.tres" id="1_kwypt"]
+[ext_resource type="Script" path="res://Resources/Inventory/SlotData/SlotData.gd" id="2_1snd5"]
+[ext_resource type="Resource" uid="uid://bi5v70tosr07x" path="res://Resources/Inventory/Consumable/RedPotion.tres" id="3_7gwxf"]
+
+[sub_resource type="Resource" id="Resource_ktejp"]
+script = ExtResource("2_1snd5")
+item_data = ExtResource("1_kwypt")
+quantity = 5
+
+[sub_resource type="Resource" id="Resource_s7g6b"]
+script = ExtResource("2_1snd5")
+item_data = ExtResource("3_7gwxf")
+quantity = 5
+
+[sub_resource type="Resource" id="Resource_ft2m2"]
+script = ExtResource("2_1snd5")
+item_data = ExtResource("1_kwypt")
+quantity = 1
+
+[resource]
+script = ExtResource("1_ir34k")
+data = Array[ExtResource("2_1snd5")]([null, SubResource("Resource_ktejp"), null, SubResource("Resource_s7g6b"), null, null, SubResource("Resource_ft2m2"), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])

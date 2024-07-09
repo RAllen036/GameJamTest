@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://b2bsold7an7j1"]
+
+[ext_resource type="Script" path="res://General/Objects/Chest/Chest.gd" id="1_3b5fq"]
+[ext_resource type="Resource" uid="uid://bkwk6ualsyqm1" path="res://Resources/Inventory/InventoryData/ChestTest.tres" id="2_5n8vv"]
+[ext_resource type="Texture2D" uid="uid://11fb8hl3ph2q" path="res://Assets/Furniture/basic.png" id="2_sbhwo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h70tj"]
+size = Vector2(28, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e2et5"]
+atlas = ExtResource("2_sbhwo")
+region = Rect2(0, 0, 32, 32)
+
+[node name="Chest" type="StaticBody2D" groups=["chest"]]
+collision_layer = 7
+collision_mask = 0
+script = ExtResource("1_3b5fq")
+inventory = ExtResource("2_5n8vv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_h70tj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 4)
+texture = SubResource("AtlasTexture_e2et5")

@@ -1,4 +1,7 @@
-SlotData
+EquipmentInventoryData
+Equipment
+Consumable
 InventoryData
-InputEventKey
 ItemData
+SlotData
+InputEventKey

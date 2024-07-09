@@ -1,5 +1,10 @@
-res://Resources/Inventory/InventoryData
+res://Resources/Inventory/EquipmentInventory
+res://Resources/Inventory/Equipment
+res://General/Players/Manager
+res://Resources/Inventory/Consumable
 res://Assets/Items
+res://Resources/Inventory/InventoryData
+res://Resources/Inventory/Items
 C:/Program Files/Krita (x64)/bin
 C:/Program Files (x86)/Steam/steamapps/common/Aseprite
 res://Assets/TileMaps/Platformer

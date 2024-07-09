@@ -5,3 +5,6 @@ extends Resource
 @export_multiline var description: String
 @export var stackable: bool = true
 @export var icon: AtlasTexture
+
+func use(_target) -> void:
+	pass

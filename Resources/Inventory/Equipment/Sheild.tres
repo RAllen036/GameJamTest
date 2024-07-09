@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Equipment" load_steps=4 format=3 uid="uid://bd1rarvg1yxjr"]
+
+[ext_resource type="Texture2D" uid="uid://dedtevoyu2bix" path="res://Assets/Items/basic.png" id="1_cfu4o"]
+[ext_resource type="Script" path="res://Resources/Inventory/Equipment/Equipment.gd" id="1_ta5fj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x0hp7"]
+atlas = ExtResource("1_cfu4o")
+region = Rect2(64, 0, 32, 32)
+
+[resource]
+script = ExtResource("1_ta5fj")
+defence = 0
+name = "Sheild"
+description = "Grants the user some protection."
+stackable = false
+icon = SubResource("AtlasTexture_x0hp7")

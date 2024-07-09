@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://sygsowc4aubu"]
+
+[ext_resource type="Script" path="res://General/Inventory/Main/Inventory.gd" id="1_dyf65"]
+[ext_resource type="PackedScene" uid="uid://c8nqg0lqmmswh" path="res://General/Inventory/Slot/Slot.tscn" id="2_21mfa"]
+[ext_resource type="StyleBox" uid="uid://bvddlc3xmn6iq" path="res://Themes/Inventory/Panel.tres" id="2_tusci"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w56pa"]
+
+[node name="Inventory" type="PanelContainer"]
+offset_right = 16.0
+offset_bottom = 16.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_w56pa")
+script = ExtResource("1_dyf65")
+packed_slot = ExtResource("2_21mfa")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Panel" type="Panel" parent="MarginContainer"]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_tusci")
+
+[node name="ItemGrid" type="GridContainer" parent="MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+columns = 8

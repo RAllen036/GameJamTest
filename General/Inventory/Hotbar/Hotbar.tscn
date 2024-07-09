@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://jv0mipfc1lsg"]
+
+[ext_resource type="Script" path="res://General/Inventory/Hotbar/Hotbar.gd" id="1_22mhn"]
+[ext_resource type="StyleBox" uid="uid://bvddlc3xmn6iq" path="res://Themes/Inventory/Panel.tres" id="2_3pgk4"]
+[ext_resource type="PackedScene" uid="uid://c8nqg0lqmmswh" path="res://General/Inventory/Slot/Slot.tscn" id="3_tqp3m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oclaf"]
+
+[node name="HotBarInventory" type="PanelContainer"]
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_oclaf")
+script = ExtResource("1_22mhn")
+packed_slot = ExtResource("3_tqp3m")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Panel" type="Panel" parent="MarginContainer"]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_3pgk4")
+
+[node name="SlotContainer" type="HBoxContainer" parent="MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
