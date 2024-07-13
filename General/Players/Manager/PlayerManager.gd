@@ -3,9 +3,6 @@ extends Node
 
 var player: CharacterBody2D
 
-func create_player() -> CharacterBody2D:
-	return null
-
 func create_new_player_inventory(inv_data: InventoryData = null) -> InventoryData:
 	if not inv_data:
 		var new_inv_data: InventoryData = InventoryData.new()

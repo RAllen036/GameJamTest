@@ -5,10 +5,11 @@ res://Resources/Inventory/InventoryData/TestInv.tres
 res://Resources/Inventory/Equipment/Sheild.tres
 res://Resources/Inventory/InventoryData/ChestTest.tres
 res://Resources/Inventory/EquipmentInventory/TestEquipmentInv.tres
-res://General/Players/Manager/PlayerManager.gd
 res://General/Worlds/Platformer/PlatformerWorldOne.tscn
 res://General/Inventory/Slot/Slot.tscn
 res://General/Inventory/Main/Inventory.tscn
 res://General/Objects/Chest/Chest.tscn
 res://General/Objects/PickUp/PickUp.tscn
 res://General/Inventory/Hotbar/Hotbar.tscn
+res://General/Players/RPG/V1/Player.tscn
+res://General/Worlds/RPGWorldOne/RPGWorldOne.tscn
